@@ -20,6 +20,9 @@ int  integer = Integer.parseInt(string);
     JOptionPane.showMessageDialog(null,"Array Size "+array.length+ "!!!");
       System.out.println("Array index limit go through the out of bounds");
 
+}catch (NullPointerException nullPointerException){
+    JOptionPane.showMessageDialog(null,"There is no input you provides");
+
 }catch (InputMismatchException inputMismatchException){
     JOptionPane.showMessageDialog(null,"String is not excepted!!!");
     System.out.println("Please input a integer value");
