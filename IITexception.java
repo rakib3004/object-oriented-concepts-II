@@ -11,15 +11,15 @@ public class IITexception {
             String string =   JOptionPane.showInputDialog("Enter Your Roll Number : ");
             boolean bool = string.contains("BSSE");
             if(bool){
-                JOptionPane.showMessageDialog(null,"Your roll no is : "+string);
-                JOptionPane.showMessageDialog(null,"Your email  is : "+string.toLowerCase()+"@iit.du.ac.bd");
+                JOptionPane.showMessageDialog(null,"Batch No : "+string.substring(4,6)+"\n"
+                        +"Roll No : "+ string.substring(6,8)+"\n"+"Your email  is : "+string.toLowerCase()+"@iit.du.ac.bd");
 
             }
             throw new MyException("Please Enter BSSE format");
         }
         catch (MyException ex)
         {
-          
+
             System.out.println(ex.getMessage());
         }
 
@@ -36,12 +36,3 @@ class MyException extends Exception
     }
 }
 
-// A Class that uses above MyException
- class Main
-{
-    // Driver Program
-    public static void main(String args[])
-    {
-
-    }
-}
