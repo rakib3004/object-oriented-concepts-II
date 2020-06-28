@@ -1,4 +1,3 @@
-package sample;
 
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
@@ -17,7 +16,7 @@ import javafx.stage.Stage;
 
 import javax.swing.*;
 
-public class Main extends Application {
+class Main extends Application {
 
 
     Label messageLbl = new Label("Choose your Gender : ");
