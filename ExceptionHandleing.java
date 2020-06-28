@@ -1,4 +1,3 @@
-package NewJava;
 
 import javax.swing.*;
 import java.util.InputMismatchException;
