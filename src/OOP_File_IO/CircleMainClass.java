@@ -1,6 +1,9 @@
-package NewPackage;
+package src.OOP_File_IO;
 
-public class Main {
+import src.LabException.Circle;
+import src.LabException.InvalidRadiusException;
+
+class Main {
     public static void main(String[] args) {
         try {
             Circle c1 = new Circle(5);   c1.setRadius(-5);

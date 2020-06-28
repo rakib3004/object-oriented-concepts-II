@@ -1,3 +1,4 @@
+package src.RollNoException;
 
 public class InvalidRadiusException extends Exception {
     private double radius;	public InvalidRadiusException() { super("invalid radius"); }
