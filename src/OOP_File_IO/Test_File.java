@@ -1,4 +1,4 @@
-package OOP_File_IO;
+package src.OOP_File_IO;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 public class Test_File {
-//	private String FILENAME = "file1.txt";
+	private String FILENAME = "file1.txt";
 	public void  writeToFile_BufferWriter(String FILENAME) {
 		BufferedWriter bw = null;
 		FileWriter fw = null;

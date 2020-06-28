@@ -1,10 +1,10 @@
-
+package src.FileManagment;
 
 import javax.swing.*;
 import java.io.*;
 
 public class TestFile {
-    private String FILENAME = "C:\\Users\\Rakib\\Music\\JavaFile\\src\\NewPackage\\IIT";
+    private String FILENAME = "Circle.txt";
     public void writeToFile_BufferWriter(){
         BufferedWriter bw = null;
         FileWriter fw = null;
