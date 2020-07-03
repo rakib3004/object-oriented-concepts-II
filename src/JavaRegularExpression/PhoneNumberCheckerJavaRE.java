@@ -18,6 +18,8 @@ public class PhoneNumberCheckerJavaRE {
         boolean aBool = !bool;
         String boolString = Boolean.toString(bool);
         boolString = boolString.toUpperCase();
-        System.out.println(boolString);
+      //  System.out.println(boolString);
+
+        System.out.println(bool?"Phone number is correct" : "Phone number is not correct");
     }
 }

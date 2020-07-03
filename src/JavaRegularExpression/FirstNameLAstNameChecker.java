@@ -1,5 +1,6 @@
 package src.JavaRegularExpression;
 
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -11,6 +12,9 @@ public class FirstNameLAstNameChecker {
 
         String userFirstName ="Rakib";
         String userLastName = "Trofder";
+        Scanner scanner = new Scanner(System.in);
+        userFirstName = scanner.nextLine();
+        userLastName = scanner.nextLine();
 
         Pattern patternFirstName = Pattern.compile(firstNamePattern);
         Pattern patternLastName = Pattern.compile(lastNamePattern);

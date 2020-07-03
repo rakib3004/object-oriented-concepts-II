@@ -21,7 +21,8 @@ public class EmailCheckerJavaRE {
        boolean aBool = !bool;
        String boolString = Boolean.toString(bool);
        boolString = boolString.toUpperCase();
-        System.out.println(boolString);
+  //      System.out.println(boolString);\
+        System.out.println(bool? "Email address is correct":"Email address is wrong");
 
     }
 }
