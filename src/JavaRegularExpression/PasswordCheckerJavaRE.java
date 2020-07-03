@@ -6,7 +6,8 @@ import java.util.regex.Pattern;
 
 public class PasswordCheckerJavaRE {
     public static void main(String[] args) {
-        String passwordPattern = "[A-Z]+[a-z]+[0-9]+";
+      //  String passwordPattern0 = "[A-Z]+[a-z]+[0-9]+";
+        String passwordPattern = "[.[a-z].[A-z].[0-9]]{8,}";
         String passwordString ="Rakib1129";
        /* Scanner scanner = new Scanner(System.in);
         passwordPattern = scanner.nextLine();*/
