@@ -20,6 +20,6 @@ public class PasswordCheckerJavaRE {
         String boolString = Boolean.toString(bool);
         boolString = boolString.toUpperCase();
        // System.out.println(boolString);
-        System.out.println(bool?"Your Password is correct.":"Your Passowrd is wrong.");
+        System.out.println(bool?"Your Password is correct.":"Your Password is wrong.");
     }
 }
