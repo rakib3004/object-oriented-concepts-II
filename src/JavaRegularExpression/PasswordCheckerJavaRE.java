@@ -9,7 +9,6 @@ public class PasswordCheckerJavaRE {
       //  String passwordPattern0 = "[A-Z]+[a-z]+[0-9]+";
         String passwordPattern = "[.[a-z].[A-z].[0-9]]{8,}";
         String passwordString ="Rakib1129";//this password is correct
-
         System.out.println("Enter your password : ");
         Scanner scanner = new Scanner(System.in);
         passwordPattern = scanner.nextLine();

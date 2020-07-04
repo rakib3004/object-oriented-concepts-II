@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class DataCheckerJavaRE {
-    RegularExpressionClass regularExpressionClass = new RegularExpressionClass();
+    static RegularExpressionClass regularExpressionClass = new RegularExpressionClass();
     public static void  main(String[] args) {
 int chooseOption;
         System.out.println("What do you want???");
@@ -36,13 +36,14 @@ public static void firstNameChecker(){
     Scanner scanner = new Scanner(System.in);
     System.out.println("Enter your first name : ");
     userFirstName = scanner.nextLine();
-
+    regularExpressionClass.regularExpressionClassMethods(firstNamePattern,userFirstName);
 }public static void lastNameChecker(){
         String lastNamePattern = "[A-Z]+([ '-][A-Z])*[a-z]*";
         String userLastName = "Trofder"; // this last name is correct
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your  last name : ");
         userLastName = scanner.nextLine();
+        regularExpressionClass.regularExpressionClassMethods(lastNamePattern,userLastName);
 
 }public static void emailChecker(){
         String emailPattern = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+*&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}";
@@ -50,9 +51,23 @@ public static void firstNameChecker(){
         System.out.println("Enter your  Email address : ");
         Scanner scanner = new Scanner(System.in);
         emailName = scanner.nextLine();
-}public static void phoneNumberChecker(){
+        regularExpressionClass.regularExpressionClassMethods(emailPattern,emailName);
 
-}public static void passwordChecker(){
+    }public static void phoneNumberChecker(){
+        String phoneNumberPattern = "01[3-9][0-9]{8}";
+        String phoneNumberExample = "01911803004";// this phone number is correct
+        System.out.println("Enter your phone number : ");
+        Scanner scanner = new Scanner(System.in);
+        phoneNumberExample = scanner.nextLine();
+        regularExpressionClass.regularExpressionClassMethods(phoneNumberPattern,phoneNumberExample);
+
+    }public static void passwordChecker(){
+        String passwordPattern = "[.[a-z].[A-z].[0-9]]{8,}";
+        String passwordString ="Rakib1129";//this password is correct
+        System.out.println("Enter your password : ");
+        Scanner scanner = new Scanner(System.in);
+        passwordPattern = scanner.nextLine();
+        regularExpressionClass.regularExpressionClassMethods(passwordPattern,passwordString);
 
 }
 
