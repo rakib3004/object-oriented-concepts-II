@@ -1,9 +1,9 @@
 package src.CombinatorialOptimization;
 
-public class MatrixChoiceMultlipication {
+public class MatrixChoiceMultiplication {
     public static void main(String[] args) {
 int [] array = new int[]{30,35,15,5,10,20,25};
-int matrixNumber = 6;
+int matrixNumber = 6; 
   int multiplicationCost =  matrixCalculation(array,1,matrixNumber);
         System.out.println("Total cost for matrix multiplication is : "+multiplicationCost);
 
