@@ -1,6 +1,6 @@
 package src.CombinatorialOptimization;
 
-public class MatrixChoiceMultiplication {
+public class MatrixChainMultiplication {
     public static void main(String[] args) {
 int [] array = new int[]{30,35,15,5,10,20,25};
 int matrixNumber = 6; 
