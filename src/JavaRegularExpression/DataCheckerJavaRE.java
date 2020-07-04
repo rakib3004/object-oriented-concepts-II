@@ -31,12 +31,25 @@ else if(chooseOption==2){
 
     }
 public static void firstNameChecker(){
-
+    String firstNamePattern ="[A-Z][a-z]+";
+    String userFirstName ="Rakib";// this first name is correct
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter your first name : ");
+    userFirstName = scanner.nextLine();
 
 }public static void lastNameChecker(){
+        String lastNamePattern = "[A-Z]+([ '-][A-Z])*[a-z]*";
+        String userLastName = "Trofder"; // this last name is correct
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your  last name : ");
+        userLastName = scanner.nextLine();
 
 }public static void emailChecker(){
-
+        String emailPattern = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+*&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}";
+        String emailName = "bsse1129@iit.du.ac.bd"; // this email address is correct
+        System.out.println("Enter your  Email address : ");
+        Scanner scanner = new Scanner(System.in);
+        emailName = scanner.nextLine();
 }public static void phoneNumberChecker(){
 
 }public static void passwordChecker(){
