@@ -10,10 +10,13 @@ public class FirstNameLAstNameChecker {
         String firstNamePattern ="[A-Z][a-z]+";
         String lastNamePattern = "[A-Z]+([ '-][A-Z])*[a-z]*";
 
-        String userFirstName ="Rakib";
-        String userLastName = "Trofder";
+        String userFirstName ="Rakib";// this first name is correct
+        String userLastName = "Trofder"; // this last name is correct
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter your first name : ");
         userFirstName = scanner.nextLine();
+        System.out.println("Enter your  last name : ");
         userLastName = scanner.nextLine();
 
         Pattern patternFirstName = Pattern.compile(firstNamePattern);

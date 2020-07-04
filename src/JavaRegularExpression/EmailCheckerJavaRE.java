@@ -9,7 +9,9 @@ public class EmailCheckerJavaRE {
     public static void main(String[] args) {
 
         String emailPattern = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+*&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}";
-        String emailName = "bsse1129@iit.du.ac.bd";
+        String emailName = "bsse1129@iit.du.ac.bd"; // this email address is correct
+
+        System.out.println("Enter your  Email address : ");
 
         Scanner scanner = new Scanner(System.in);
         emailName = scanner.nextLine();

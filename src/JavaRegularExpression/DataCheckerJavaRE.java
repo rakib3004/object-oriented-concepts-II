@@ -19,19 +19,27 @@ chooseOption = scanner.nextInt();
 if(chooseOption==1){
     firstNameChecker();
 }
-
+else if(chooseOption==2){
+    lastNameChecker();
+}else if(chooseOption==3){
+    emailChecker();
+}else if(chooseOption==4){
+    phoneNumberChecker();
+}else if(chooseOption==5){
+    passwordChecker();
+}
 
     }
 public static void firstNameChecker(){
-    System.out.println("Hiiiiiiiiiiiiiiiiiiiii");
+
 
 }public static void lastNameChecker(){
 
-}public static void EmailChecker(){
+}public static void emailChecker(){
 
-}public static void PhoneNumberChecker(){
+}public static void phoneNumberChecker(){
 
-}public static void PasswordChecker(){
+}public static void passwordChecker(){
 
 }
 

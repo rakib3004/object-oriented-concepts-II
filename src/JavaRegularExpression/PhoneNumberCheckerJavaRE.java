@@ -7,8 +7,9 @@ import java.util.regex.Pattern;
 public class PhoneNumberCheckerJavaRE {
     public static void main(String[] args) {
         String phoneNumberPattern = "01[3-9][0-9]{8}";
-        String phoneNumberExample = "01911803004";
+        String phoneNumberExample = "01911803004";// this phone number is correct
 
+        System.out.println("Enter your phone number : ");
         Scanner scanner = new Scanner(System.in);
         phoneNumberExample = scanner.nextLine();
 
