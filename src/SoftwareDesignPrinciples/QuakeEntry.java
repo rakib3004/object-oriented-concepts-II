@@ -4,17 +4,20 @@ public class QuakeEntry {
 
     private Location location;
 private String title;
-
-
-
     private double depth;
-private double magnitude;
+
+
+
+    private double magnitude;
 
     public QuakeEntry(double lat, double lon, String title, double depth, double magnitude) {
         this.location = new Location(lat,lon);
         this.title = title;
         this.depth = depth;
         this.magnitude = magnitude;
+    }
+    public double getMagnitude() {
+        return magnitude;
     }
     public Location getLocation() {
         return location;

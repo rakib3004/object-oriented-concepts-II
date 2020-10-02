@@ -8,8 +8,8 @@ public class EarthQuakeParser {
     public EarthQuakeParser(){
 
     }
-    public ArrayList<Integer> read(String source){
-        ArrayList<Integer> list = new ArrayList<Integer>();
+    public ArrayList<QuakeEntry> read(String source){
+        ArrayList<QuakeEntry> list = new ArrayList<QuakeEntry>();
         return  list;
     }
 }
