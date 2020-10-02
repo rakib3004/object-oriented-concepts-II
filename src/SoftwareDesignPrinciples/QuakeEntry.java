@@ -1,18 +1,30 @@
 package src.SoftwareDesignPrinciples;
 
 public class QuakeEntry {
-private Location location;
+
+    private Location location;
 private String title;
+
+
+
     private double depth;
 private double magnitude;
 
-    public QuakeEntry(Location location, String title, double depth, double magnitude) {
-        this.location = location;
+    public QuakeEntry(double lat, double lon, String title, double depth, double magnitude) {
+        this.location = new Location(lat,lon);
         this.title = title;
         this.depth = depth;
         this.magnitude = magnitude;
     }
-
+    public Location getLocation() {
+        return location;
+    }
+    public double getDepth() {
+        return depth;
+    }
+    public String getInfo(){
+        return "This is a earth-quake";
+    }
 static class Location {
 
     private double location1;
