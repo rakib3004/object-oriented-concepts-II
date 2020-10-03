@@ -7,7 +7,7 @@ public class Main {
 
 
 EarthQuakeParser earthQuakeParser = new EarthQuakeParser();
-String source = "data/nov20quakedata.atom";
+String source = "https://earthquake.usgs.gov/earthquake/feed/v1.0/summary/all_week.atom";
         ArrayList<QuakeEntry> list = earthQuakeParser.read(source);
         dumpCSV(list);
         System.out.println("# quakes read : "+list.size());
