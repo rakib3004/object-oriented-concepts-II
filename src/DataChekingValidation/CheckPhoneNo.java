@@ -9,7 +9,7 @@ public class CheckPhoneNo {
         Scanner scanner = new Scanner(System.in);
         String patternModel;
 
-        patternModel = "^(\\+88)?[01][3456789][0-9]{7}$";
+        patternModel = "^([+]88)?[01][0-9&&[^012]][0-9]{8}$";
         Pattern pattern = Pattern.compile(patternModel);
 
         String emailAddress;
