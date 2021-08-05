@@ -4,29 +4,29 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CheckFirstName {
+public class CheckDepartmentMailId {
 
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String patternModel;
 
-        patternModel = "[A-Z][a-z]+";
+        patternModel = "^(b|m)sse(0[1-9]|[1-9][0-9])(0[1-9]|[1-9][0-9])@iit.du.ac.bd$";
         Pattern pattern = Pattern.compile(patternModel);
 
-        String firstName;
-            firstName="Testname";
+        String emailAddress;
+        emailAddress="TestEmail";
 
-           int testValue=1;
+        int testValue=1;
         while(testValue!=0){
-            System.out.println("Enter Your Name:");
-            firstName = scanner.nextLine();
-            if(firstName=="\n"){
+            System.out.println("Enter Your Mail:");
+            emailAddress = scanner.nextLine();
+            if(emailAddress=="\n"){
                 testValue=0;
             }
             else {
-                Matcher matcher = pattern.matcher(firstName);
-                System.out.println(matcher.find()? "Successful Login":"Login Unsuccessful!!!!");
+                Matcher matcher = pattern.matcher(emailAddress);
+                System.out.println(matcher.find()? "Mail ID Okay":"Error!!");
 
             }
         }
