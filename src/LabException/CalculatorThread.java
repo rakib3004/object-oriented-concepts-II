@@ -5,23 +5,10 @@ import java.util.Scanner;
 public class CalculatorThread {
 
 
-
-
     public static void main(String[] args) {
 
-        int a,b;
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter Two Number: ");
-        System.out.println("Enter a: ");
-        a= scanner.nextInt();
-        System.out.println("Enter b: ");
-        b= scanner.nextInt();
-
         ThreadObject threadObject = new ThreadObject();
-
-        threadObject.myCalculator(a,b);
+        threadObject.inputOutputStream();
 
     }
 }
@@ -39,17 +26,40 @@ class ThreadObject{
         return a*b;
 
     }
-    public  double division(int a, int b){
+    public  double divide(int a, int b){
 
-        return Double.valueOf(a/b);
+        return Double.valueOf(a)/Double.valueOf(b);
     }
 
     public  void myCalculator(int a, int b){
 
         System.out.println("Result of Addition: "+add(a,b));
-        System.out.println("Result of Subtraction: "+add(a,b));
-        System.out.println("Result of Addition: "+add(a,b));
-        System.out.println("Result of Addition: "+add(a,b));
+        System.out.println("Result of Subtraction: "+subtract(a,b));
+        System.out.println("Result of Multiplication: "+multiply(a,b));
+        System.out.println("Result of Division: "+divide(a,b));
+
+    }
+
+    public void inputOutputStream(){
+
+        Scanner scanner = new Scanner(System.in);
+        int a,b;
+
+        System.out.println("Enter Two Number: ");
+        System.out.print("Enter a: ");
+
+        try{
+            a= scanner.nextInt();
+            System.out.print("Enter b: ");
+            b= scanner.nextInt();
+
+           myCalculator(a,b);
+        }
+        catch (Exception exception){
+            System.out.println("Occur Some Problem!!\n Try again!");
+            inputOutputStream();
+        }
+
 
     }
 
